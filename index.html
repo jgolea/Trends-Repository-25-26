@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>My Ultimate College Life Web Page</title>
+
+<style>
+h1{
+    text-align:center;
+    color:#FFFFFF;
+}
+
+h2{
+    color:#FFFFFF;
+}
+
+body{
+    background-color:#000000;
+    background: url("https://cdn.wallpapersafari.com/68/80/TmZ8PU.jpg");
+    background-size: cover;
+    background-position: center;
+    color:#FFFFFF;
+    margin:0;
+    padding:20px;
+}
+
+h1, p{
+    text-align: center;
+    color:#FFFFFF;
+}
+
+ol, h2{   
+color:#FFFFFF;
+}
+.profile-pic{
+    display: block;
+    margin: 20px auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid white; 
+}
+
+.sections-container{
+    display:flex;
+    justify-content:center;   
+    gap:20px;                 
+    margin-top:30px;
+    flex-wrap:wrap;           
+}
+
+.section-box{
+    background-color:#333333;
+    border:2px solid #ffffff;
+    border-radius:15px;
+    padding:20px;
+    width:28%;                
+    min-width:250px;          
+}
+
+.button {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 220px;
+    background-color:#333333;
+    border:2px solid #ffffff;
+    color: #ffffff;
+    padding: 15px 32px;
+    font-size: 16px;
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    border-radius: 8px; 
+  }
+
+  .button:hover {
+    background-color: #45a049; 
+  }
+
+  .button:active {
+    transform: translateY(1px); 
+  }
+
+</style>
+</head>
+
+<body>
+
+<h1 id="mainTitle"><b>Welcome to My Ultimate College Life Web Page!</b></h1>
+<hr>
+
+<img src="unnamed.jpg" class="profile-pic" alt="My Photo">
+<p>Hello! I am <b>Jude Homer P. Olea</b>, a 2nd year student taking
+<i>Bachelor of Science in Computer Science</i>. One fun fact about me is I only took BSCS because I think it is practical.</p>
+
+<div class="sections-container">
+
+    <div class="section-box">
+        <h2>College Must-Haves</h2>
+        <ol>
+            <li>Laptop</li>
+            <li>Internet</li>
+            <li>Friends</li>
+            <li>Go to place for lunch</li>
+        </ol>
+    </div>
+
+    <div class="section-box">
+        <h2>Daily Routine</h2>
+        <ol>
+            <li>Wake up at 5am</li>
+            <li>Attend classes</li>
+            <li>Lunch break</li>
+            <li>Study or play</li>
+            <li>Rest at night</li>
+        </ol>
+    </div>
+
+    <div class="section-box">
+        <h2>Hobbies / Interests</h2>
+        <ol>
+            <li>Gaming</li>
+            <li>Singing</li>
+            <li>Study(for 5 minutes)</li>
+        </ol>
+    </div>
+
+</div>
+
+<button type="button" class="button" id="myButton">Click Me!</button>
+
+<script>
+    const button = document.getElementById("myButton");
+    const title = document.getElementById("mainTitle");
+
+    button.addEventListener("click", function() {
+        title.innerText = "Thanks for Visiting My Page! Garing!";
+    });
+</script>
+
+</body>
+</html>
